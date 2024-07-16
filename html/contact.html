@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mycss.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header-container"></header>
+
+    <div class="line-green">
+        <h1>Contacto</h1>
+    </div>
+
+    <div class="backGroundImage">
+
+        <div class="formContainer">
+            <label for="inputNameContact">NOMBRE</label>
+            <input id="inputNameContact" type="text" autocomplete="off">
+
+            <label for="inputEmailContact">CORREO</label>
+            <input id="inputEmailContact" type="text" autocomplete="off">
+
+            <label for="textMessageContact">MENSAJE</label>
+            <textarea id="textMessageContact" cols="30" rows="5" placeholder="Escribe aqui tu mensaje..."></textarea>
+
+            <input class="buttonContact" type="submit" value="Enviar" onclick="sendEmail()">
+        </div>
+
+        <div id="messageContainer">
+            <span id="spanContact"></span>
+        </div>
+
+        <img id="imgGoat" src="/img/cabraContacto.png" alt="Cabra borracha">
+
+    </div>
+
+   
+
+
+    <footer id="footer-container"></footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,548 @@
+/* Fuente descargada */
+@font-face {
+    font-family: 'roboto';
+    src: url(/fonts/RobotoSlab-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.selection {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.selection a {
+    text-decoration: none;
+    font-size: x-large;
+    margin: auto;
+    color: black;
+}
+
+.selection a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: rgb(109, 129, 109);
+    transition: all 300ms;
+}
+
+.selection a:hover::after {
+    width: 100%;
+}
+
+.selection a:hover {
+    font-size: 24.3px;
+}
+
+.selection img {
+    width: 200px;
+    height: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+footer img {
+    margin-right: 25px;
+}
+
+@media (max-width: 700px) {
+
+    .selection {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .selection a {
+        font-size: medium;
+        margin: auto;
+    }
+
+    .selection img {
+        width: 100px;
+        height: 50px;
+        margin: 5px;
+    }
+
+    .line-green h1 {
+        font-size: 20px;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 11px;
+        justify-content: center;
+    }
+
+    #nav_footer a {
+        display: none;
+    }
+
+    #backgroundIndex p {
+        font-size: 11px;
+
+    }
+
+    .formContainer {
+        min-width: 70%;
+        margin-top: 20px;
+    }
+
+    #imgGoat {
+        display: none;
+    }
+
+}
+
+
+
+/* FONDO INICIO */
+#backgroundIndex {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-width: 20%;
+    background: url(/img/indexImg.png) no-repeat center fixed;
+    background-size: cover;
+    background-position: center calc(50% + 120px);
+    backdrop-filter: brightness(0.5)
+}
+
+#backdrop {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(0.5);
+}
+
+#backgroundIndex p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(92, 92, 92, 0.082);
+    /* padding: 1.25em; */
+    /* border: 1px solid rgba(0, 0, 0, 0.705); */
+    border-radius: 20px;
+    font-size: 4vw;
+    font-family: 'roboto';
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+
+
+/* ARTIST */
+.line-green {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(109, 129, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-green h1 {
+    font-family: 'roboto';
+}
+
+.backGroundImage {
+    position: relative;
+    background: url('/img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    flex: 1
+}
+
+.new-artist {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.new-artist p {
+    margin-top: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+.new-artist input {
+    height: 32px;
+    margin: 18px;
+    padding: 5px;
+    width: calc(80% - 22px);
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+.new-artist input:focus {
+    outline: 3px solid rgb(109, 129, 109);
+
+}
+
+.new-artist button {
+    height: 32px;
+    padding: 0 18px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #5c5c5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.new-artist button:hover {
+    background-color: rgb(109, 129, 109);
+    outline: 3px solid #5c5c5c;
+    ;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container {
+    width: 300px;
+    margin: 20px;
+    border: 2px solid #858484;
+    border-radius: 10px;
+    background-color: #dcdada;
+    text-align: center;
+}
+
+.imgArtists {
+    width: 100%;
+    height: auto;
+}
+
+.infArtists {
+    padding: 20px;
+}
+
+.nameArtists {
+    margin: 0;
+    font-size: 1.5em;
+    color: #000000;
+    word-wrap: break-word;
+}
+
+.descriptionArtists {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+/* +INFO */
+.backGroundImage h1 {
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #858484;
+}
+
+.backGroundImage h1:hover {
+    color: rgb(235, 235, 235);
+    text-shadow: 0 0 15px white,
+        0 0 25px white,
+        0 0 35px yellow,
+        0 0 55px white,
+        0 0 75px white;
+
+}
+
+/* SHOP */
+
+.line-green-shop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(109, 129, 109);
+}
+
+.line-green-shop h1 {
+    flex-grow: 1;
+    font-family: 'roboto';
+    text-align: center;
+}
+
+.shoppingBasket {
+    justify-content: end;
+}
+
+.containerMerchand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    /* Espacio entre las tarjetas */
+    padding: 20px;
+}
+
+.cardMerchand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #dcdada;
+    margin: 10px;
+}
+
+.cardMerchand img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.infMerchand {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.sizeSelect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sizeSelect p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.sizeSelect select {
+    margin-left: 8px;
+    padding: 4px;
+    font-size: 16px;
+}
+
+.quantityAdd {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.quantityAdd input {
+    width: 60px;
+    padding: 4px;
+    font-size: 16px;
+}
+
+.quantityAdd button {
+    margin-left: 10px;
+    padding: 8px 8px;
+    font-size: 16px;
+    background-color: #5c5c5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantityAdd button:hover {
+    background-color: rgb(109, 129, 109);
+}
+
+
+
+
+#shoppingBasket {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    color: white;
+}
+
+/*  */
+
+#shoppingList {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 300px;
+    background: #dcdada;
+    border: 3px solid rgb(109, 129, 109);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#cartItems {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#cartTotal {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#shoppingBasket {
+    position: relative;
+}
+
+.buttonPay,
+.buttonClose {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.buttonPay {
+    background: #28a745;
+    color: white;
+}
+
+.buttonPay:hover {
+    background: #218838;
+}
+
+.buttonClose {
+    background: #dc3545;
+    color: white;
+}
+
+.buttonClose:hover {
+    background: #c82333;
+}
+
+.btnShop {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CONTACT */
+
+.formContainer {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.formContainer label,
+.formContainer input,
+.formContainer textarea,
+.formContainer .buttonContact {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.formContainer input,
+.formContainer textarea {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+.buttonContact {
+    padding: 8px 8px;
+    font-size: 18px;
+    background-color: #5c5c5c;
+    color: #fff;
+    cursor: url(/img/cursorC.png), auto;
+}
+
+.buttonContact:hover {
+    background-color: rgb(109, 129, 109);
+}
+
+#imgGoat {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+}
+
+#messageContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.messageContact {
+    background-color: rgb(248, 248, 248);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

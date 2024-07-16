@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mycss.css">
+    <title>Tienda</title>
+</head>
+
+<body>
+
+    <header id="header-container"></header>
+
+    <div class="line-green-shop">
+        <h1>Tienda oficial</h1>
+        <div id="shoppingBasket">
+            <img src="/img/carrito.png" onclick="showSpan()" alt="shoppingBasket"
+                style="cursor: pointer; width:25px; height: 25px;">
+            <span id="shoppingCount">0</span>
+        </div>
+    </div>
+
+    <div class="backGroundImage">
+
+        <div class="containerMerchand">
+            <div class="cardMerchand">
+                <div class="imgContainer">
+                    <img src="../img/camiseta1.png" alt="camiseta">
+                </div>
+                <div class="infMerchand">
+                    <p class="price">Camiseta 1: 14€</p>
+                    <div class="sizeSelect">
+                        <p>Seleccion de talla:</p>
+                        <select class="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="quantityAdd">
+                        <input class="quantity" type="number" min="1" placeholder="Unid">
+                        <button onclick="addToCart('Camiseta1', 14, this)">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cardMerchand">
+                <div class="imgContainer">
+                    <img src="../img/camiseta2.png" alt="camiseta2">
+                </div>
+                <div class="infMerchand">
+                    <p class="price">Camiseta 2: 18€</p>
+                    <div class="sizeSelect">
+                        <p>Seleccion de talla:</p>
+                        <select class="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="quantityAdd">
+                        <input class="quantity" type="number" min="1" placeholder="Unid">
+                        <button onclick="addToCart('Camiseta2', 18, this)">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cardMerchand">
+                <div class="imgContainer">
+                    <img src="../img/beer.png" alt="Cerveza">
+                </div>
+                <div class="infMerchand">
+                    <p class="price">Cerveza: 2.75€</p>
+                    <div class="quantityAdd">
+                        <input class="quantity" type="number" min="1" placeholder="Unid">
+                        <button onclick="addToCart('Cerveza', 2.75, this)">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cardMerchand">
+                <div class="imgContainer">
+                    <img src="../img/tote.png" alt="toteBag">
+                </div>
+                <div class="infMerchand">
+                    <p class="price">Tote bag: 6€</p>
+                    <br />
+                    <div class="quantityAdd">
+                        <input class="quantity" type="number" min="1" placeholder="Unid">
+                        <button onclick="addToCart('Tote bag', 6, this)">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <span id="shoppingList">
+        <div id="cartItems"></div>
+        <div id="cartTotal"></div>
+        <div class="btnShop">
+            <button class="buttonPay" onclick="pay()">Pagar</button>
+            <button class="buttonClose" onclick="closePay()">Cerrar</button>
+        </div>
+    </span>
+
+    <audio id="audioPay"></audio>
+
+    <!-- <div id="messageContainer">
+        <span id="spanContact"></span>
+    </div> -->
+
+    <footer id="footer-container"></footer>
+</body>
+<script src="/script.js"></script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mycss.css">
+    <title>Artistas</title>
+</head>
+
+<body onload="showBands()">
+
+    <header id="header-container"></header>
+
+    <div class="line-green">
+        <h1>Artistas</h1>
+    </div>
+
+    <div class="backGroundImage">
+        <div class="new-artist">
+            <p><b>¡Propón tus artistas favoritos! </b></p>
+            <input id="inputNameArtist" placeholder="Nombre" autocomplete="off">
+            <input id="inputDesArtist" placeholder="Descripción de la banda" autocomplete="off">
+            <br>
+            <button onclick="addNewArtist()">Añadir</button>
+        </div>
+        <br>
+        <div class="cards-container" id="cardsContainer">
+        </div>
+    </div>
+
+    <footer id="footer-container"></footer>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

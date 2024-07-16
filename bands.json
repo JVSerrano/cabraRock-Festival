@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Tormenta Eléctrica",
+        "description": "Banda de rock alternativo conocida por sus intensos riffs de guitarra y letras introspectivas."
+    },
+    {
+        "name": "Gárgolas Nocturnas",
+        "description": "Grupo de rock gótico que combina melodías oscuras con una estética inspirada en la arquitectura medieval."
+    },
+    {
+        "name": "Furia Ancestral",
+        "description": "Banda de rock progresivo que incorpora elementos de la mitología y la historia antigua en sus canciones. "
+    },
+    {
+        "name": "Hijos del Caos",
+        "description": "Grupo de punk rock conocido por sus letras provocadoras y su actitud rebelde."
+    },
+    {
+        "name": "Ecos del Abismo",
+        "description": "Banda de metal sinfónico que fusiona potentes riffs de guitarra con arreglos orquestales. "
+    },
+    {
+        "name": "Viento y Fuego",
+        "description": "Grupo de rock clásico con influencias del blues y el rock and roll de los años 70. Conocidos por sus solos de guitarra virtuosos y su sonido vintage."
+    }
+]
